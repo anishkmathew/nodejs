@@ -12,3 +12,5 @@ module.exports.greetings = sayHello;
 //module.exports.endPoint = url;
 module.exports.log = log;
 //module.exports.endPoint = url;
+console.log(__filename);
+console.log(__dirname);
