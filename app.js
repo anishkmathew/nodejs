@@ -11,3 +11,8 @@ emitter.on('msgLog',()=>{
 
 //Raise an event
 emitter.emit('msgLog');
+
+//Path module
+const path = require('path');
+var pathObj = path.parse(__filename);
+console.log(pathObj);
