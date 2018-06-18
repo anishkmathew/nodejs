@@ -23,3 +23,15 @@ var totalMemory = os.totalmem();
 var freeMemory  = os.freemem();
 console.log(`TotalMemory : ${totalMemory}`);
 console.log(`freeMemory : ${freeMemory}`);
+
+// File system module
+const fs = require('fs');
+var files = fs.readdirSync('.');
+var afiles = fs.readdir('.',(err,result)=>{
+  if (err){
+    console.log(err);
+  }else{
+    console.log(result);//Assynchronous
+  }
+});
+console.log(files); //Sychronous
