@@ -23,3 +23,12 @@ var totalMemory = os.totalmem();
 var freeMemory  = os.freemem();
 console.log(`TotalMemory : ${totalMemory}`);
 console.log(`freeMemory : ${freeMemory}`);
+
+const fs = require('fs');
+fs.readdir('.', (err,files)=>{
+  if (err){
+    console.log("no such file.");
+  }else {
+    console.log(files);
+  }
+})
