@@ -5,12 +5,12 @@ const EventEmitter = require('events');
 var emitter = new EventEmitter();
 
 //Register a Listener
-emitter.on('msgLog',()=>{
-  console.log("Listener called");
+emitter.on('msgLog',(e)=>{
+  console.log("Listener called" ,e);
 })
 
 //Raise an event
-emitter.emit('msgLog');
+emitter.emit('msgLog', {id:3, data : "Test"});
 
 //Path module
 const path = require('path');
