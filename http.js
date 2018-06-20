@@ -1,9 +1,9 @@
 const http = require('http');
 const server = http.createServer((req,res)=>{
-  if (req.url = './'){
+  if (req.url == './'){
     res.write('This is root file called.')
   }
-  if (req.url = './api/courses'){
+  if (req.url == './api/courses'){
     res.write('List of courses', JSON.stringify(['BCA','MCA','MBA']));
   }
 });
