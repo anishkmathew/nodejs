@@ -5,7 +5,7 @@ const server = http.createServer((req,res)=>{
     res.end();
   }
   if (req.url === '/api/courses'){
-    res.write('List of courses', JSON.stringify(['BCA','MCA','MBA']));
+    res.write(JSON.stringify(['BCA','MCA','MBA']));
     res.end();
   }
 });
